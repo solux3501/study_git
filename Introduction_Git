@@ -34,3 +34,8 @@ git log (브랜치명1)..(브랜치명2) : 각 브랜치 차이 보여주기(왼
 git merge (브랜치명) : 병합할 브랜치와 합병
 git merge (브랜치명) --no-edit : 편집기 실행하지 않고 커밋 메시지 작성
 git merge (브랜치명) --edit : 편집기 나타나지 않게 했을때, 나오게 하는 방법
+merge 시에 병합 알고리즘이 2 way와 3 way방식이 있는데 3way가 더 좋음
+* 대표적인 병합프로그램 : P4Merge, Meld, Kdiff3, Araxis Merge
+git branch -d (브랜치명) : 브랜치 삭제. d는 delete를 뜻하며, 삭제해도 같은 이름으로 하면 예전 내용 볼 수 있음
+* -D의 경우 병합되지 않은 브랜치도 강제 삭제
+git reset (커밋해시) : 현재 브런치의 최신 커밋을 원하는 커밋해시로 변경. git checkout과 다르게 기존 것은 사라짐
