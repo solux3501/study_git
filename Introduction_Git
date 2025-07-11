@@ -55,6 +55,16 @@ git push -u origin master : 지역 저장소 브랜치인 origin을 원격의 ma
 git pull origin master : 원격 저장소 브랜치인 origin을 로컬의 master 브랜치로 가져 옮
 fork : 복사
 ssh-keygen : ssh로그인 방식의 키 받기
+
+clone / cloning : 원격 저장소를 지역 저장소로 똑같이 가져옮
+git clone (복사한 주소) git_home : 해당 주소의 깃을 git_home으로 가져오기
+HEAD->master : 해당 커밋이 지역 저장소의 최종 커밋
+origin/master : 원격 저장소의 최종커밋
+git fetch : 원격 브랜치 정보 가져오기(어떤 변화가 있는지 확인)
+git checkout FETCH_HEAD : 페치해서 최신 커밋 확인
+git diff HEAD origin/master : 지역 저장소 최신 커밋과 페치한 커밋 차이 비교
+git merge FETCH_HEAD :  (브랜치 변경 후) 페치한 내용과 병합
+
 * 2번 엔터하면 비번 생성
 *id_ras파일 : 프라이빗키 / id_rsa.pub : 퍼블릭키
 .ssh : 해당 디렉터리는 홈 디렉터위 하위에 만들어짐
